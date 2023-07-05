@@ -15,10 +15,5 @@ export class SidebarComponent {
   searchTag(tag:string){
     this.gifsService.searchTag(tag);
   }
-  clearTag(tag:string, e:any){
-    e.stopPropagation();
-    console.log(this.gifsService.tagsHistory);
-    console.log(tag);
-    // this.gifsService.tagsHistory = this.gifsService.tagsHistory.filter(tag => tag === tag)
-  }
+
 }
